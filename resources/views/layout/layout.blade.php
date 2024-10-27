@@ -21,6 +21,7 @@
     @endif
     @auth
         <h1>Welcome back: {{auth()->user()->name }}</h1>    
+        <p> <a href="{{ route('logout') }}">Logout</a> </p>
     @endauth
      @yield('content')
     
