@@ -1,8 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<body>
+@extends('layout.layout')
+@section('content')
     <h1>Welcome Page</h1>
-</body>
-
-</html>
+@endsection
