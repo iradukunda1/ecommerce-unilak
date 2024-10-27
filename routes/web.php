@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/logout', function () {
     Auth::logout();
-    return view('LoginFrom');
+    return view('userLogin');
 })->name('logout');
 Route::get('/', [UserController::class, 'showHomePage']);
 Route::get('/show-registration-form', [UserController::class, 'showRegistrationForm'])->name('showRegistration');
