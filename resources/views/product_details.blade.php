@@ -2,7 +2,7 @@
 
 @section('content')
     <h1>Product Page</h1>
-    <form method="POST">
+    <form method="POST" action="{{ route('product.store') }}">
         {{ csrf_field() }}
         <p>
             Name: <input type="text" name="name" placeholder="product name">

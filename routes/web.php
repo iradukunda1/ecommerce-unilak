@@ -15,3 +15,5 @@ Route::post('/registration', [UserController::class, 'registerUser'])->name('reg
 Route::get("/show-login", [UserController::class, 'showLogin'])->name('showLogin');
 Route::post("/showLogin", [UserController::class, 'userLogin'])->name('userLogin');
 Route::get('/show-product-form', [ProductController::class, 'showProductForm'])->name('showProductForm');
+Route::post('/product/store', [ProductController::class, 'store'])->name('product.store');
+Route::get('/all_products', [ProductController::class, 'showAllProducts'])->name('show-all-products');

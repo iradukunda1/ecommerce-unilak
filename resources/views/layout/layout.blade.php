@@ -24,6 +24,7 @@
         <p> <a href="{{ route('logout') }}">Logout</a> </p>
     @endauth
         <p> <a href="{{ route('showRegistration') }}">REGISTER</a> </p>
+        <p> <a href="{{ route('showProductForm') }}">NEW PRODUCT</a> </p>
      @yield('content')
     
 </body>
