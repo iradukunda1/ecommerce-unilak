@@ -25,7 +25,8 @@
                         @endif
                     </td>
                     <td>
-                        <a href="{{ route('product_delete', $product->id) }}">Delete</a>
+                        <a href="{{ route('product_delete', $product->id) }}" style="color: red">Delete</a>
+                        <a href="{{ route('edit_product', $product->id) }}">EDIT</a>
                     </td>
                 </tr>
             @endforeach
