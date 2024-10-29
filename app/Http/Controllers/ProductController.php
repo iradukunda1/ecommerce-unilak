@@ -39,6 +39,13 @@ class ProductController extends Controller
         $product->description = $request->description;
         $product->stock = $request->stock;
         
+        if($request->hasFile('product_image')){
+            $file = $request->file('product_image');
+            $filename = time() . '_' . $file->getClientOriginalExtension();
+            $file->move(public_path('images'), $filename);
+            $product->image_url = $filename;
+        }
+
         $product->save();
 
         return redirect()->back()->with('message', 'Product added successfully');
