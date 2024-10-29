@@ -23,6 +23,10 @@
                         @else
                             <p>No image</p>
                         @endif
+                    </td>
+                    <td>
+                        <a href="{{ route('product_delete', $product->id) }}">Delete</a>
+                    </td>
                 </tr>
             @endforeach
         </tbody>

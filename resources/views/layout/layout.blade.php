@@ -25,6 +25,7 @@
     @endauth
         <p> <a href="{{ route('showRegistration') }}">REGISTER</a> </p>
         <p> <a href="{{ route('showProductForm') }}">NEW PRODUCT</a> </p>
+        <p> <a href="{{ route('show-all-products') }}">All PRODUCTS</a> </p>
      @yield('content')
     
 </body>

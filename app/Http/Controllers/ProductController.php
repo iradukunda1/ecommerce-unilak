@@ -58,19 +58,9 @@ class ProductController extends Controller
     }
 
 
-    public function edit($id)
+    public function delete(Product $product)
     {
-        //
-    }
-
-    public function update(Request $request, $id)
-    {
-        //
-    }
-
- 
-    public function destroy($id)
-    {
-        //
+        $product->delete();
+        return redirect()->back()->with('message', 'Product deleted successfully');
     }
 }
